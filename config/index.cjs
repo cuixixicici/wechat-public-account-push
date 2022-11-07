@@ -25,7 +25,7 @@ const USER_CONFIG = {
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'BtF-ENNO4lDXVxVtuak_UGr-Ev2SLHoPSNhkr9ybjCk',
         {
-          type: '*生日', name: '保雷', year: '2000', date: '02-28',
+          type: '*生日', name: '保雷', year: '*2000', date: '02-28',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
