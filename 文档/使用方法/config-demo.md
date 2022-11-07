@@ -20,12 +20,12 @@ const USER_CONFIG = {
   // 使用微信测试号时才需要填写：公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: '',
+  wx4d8d5ad62939e642: '',
 
   // 使用微信测试号时才需要填写：公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '',
+  dba742b05f7d6944161cff1c4039cee6: '',
   
   // 为了避免推送服务器误将脚本列为恶意推送脚本，可设置每分钟脚本最大推送数
   // 每分钟脚本最大推送数，超过此数将会休眠1分钟后再发送剩余消息，不填则默认为5
@@ -73,25 +73,25 @@ const USER_CONFIG = {
   
     /** 学生课表 */
     // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
-    courseSchedule: true,
+    courseSchedule: false,
   },
   
   TIAN_API: {
     // 天行API KEY，如果使用天行API则需要填写此项
-    key: '',
+    key: 'bc833190ab264418a01e518edcf9ae12',
     
     /** 天行API相关，需要config中配置 TIAN_API_KEY  */
     // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
     morningGreeting: true,
   
     // 晚安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
-    eveningGreeting: true,
+    eveningGreeting: false,
   
     // 天行天气（展示未来N天，最多7天）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
-    weather: 3,
+    weather: 0,
   
     // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
-    networkHot: 3,
+    networkHot: 0,
   
     // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
     networkHotType: 'default',
@@ -110,22 +110,22 @@ const USER_CONFIG = {
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [
+  USERS: [o5E8g5ndLkz8iib-9lLhiLtnpgw4	
     {
       // 想要发送的人的名字
-      name: '老婆0',
+      name: '保雷',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
-      id: '',
+      id: 'o5E8g5ndLkz8iib-9lLhiLtnpgw4',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
-      useTemplateId: '',
+      useTemplateId: 'k9NUorjCGjcTGbC_kiuCo2vyKmQJ7QC5UJ24e6AHPww',
       // 所在省份或城市，也可以不填
-      province: '惠州',
+      province: '山东',
       // 所在城市或县区
-      city: '惠阳',
+      city: '青岛',
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '04-03',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -134,14 +134,14 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '保雷', year: '2000', date: '02-28',
         },
         {
           type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '生日', name: '保雷', year: '2000', date: '04-03',
         },
         {
           type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
@@ -271,10 +271,10 @@ const USER_CONFIG = {
 
   // 使用微信测试号：【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
   // 使用其他通道时，请填写 config/template-config.cjs 中【推送完成提醒】模板的id
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: 'o5E8g5ndLkz8iib-9lLhiLtnpgw4	',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: [o5E8g5ndLkz8iib-9lLhiLtnpgw4	
     {
       // 一般都填自己
       name: '自己',
